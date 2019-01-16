@@ -8,21 +8,51 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>2018 Starter Kit</title>
-
-  <!-- React Scripts -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-
-  <!-- Don't use this in production: -->
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <title>Radio Group</title>
 </head>
 <body>
 
-  <h1>Sandbox</h1>
-  <div id="root"></div>
+  <h1>Radio Group</h1>
 
-  <script type="text/babel" src="js/main.js"></script>
+  <div class="demo">
+
+    <h3>Radio group example</h3>
+
+    <fieldset class="custom-radio-group">
+      <legend>Select a maintenance drone</legend>
+
+      <div class="native-radio-group">
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Huey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie" />
+          <label for="louie">Louie</label>
+        </div>
+      </div>
+
+      <ul id="group1" class="extended-radio-group hidden">
+        <li tabindex="0" class="radio" checked>Huey</li>
+        <li tabindex="-1" class="radio">Dewey</li>
+        <li tabindex="-1" class="radio">Louie</li>
+      </ul>
+
+    </fieldset>
+
+
+
+
+
+  </div>
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>

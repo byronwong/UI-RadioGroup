@@ -1,8 +1,11 @@
-This project is using: 2018-starter
+Custom implementation of a radio group with accessibility built in.
+
+## Status
+Currently: Work in progress (incomplete)
 
 ## Global requirements
-To package this (deleting node modules) you can use `npm run package`
-- `del-cli` - `npm install --global del-cli`
+To package this project (deleting node modules) you can use `npm run package`
+- requires `del-cli` install: `npm install --global del-cli`
 
 ## Getting started
 - `npm i`
@@ -15,10 +18,9 @@ To package this (deleting node modules) you can use `npm run package`
 - `npx babel --version` - to check babel is correctly installed
 - `npm babel-node` - to run babel on our build scripts including app.js
 
-## JS files
-Please note that JS on the html are using:
-```html
-  <script type="text/babel" src="js/main.js"></script>
-```
-Change this if you want to use normal JS
+## Resources
+https://inclusive-components.design/
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
 
